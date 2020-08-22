@@ -1,5 +1,6 @@
 import React from 'react';
 import './Table.css';
+import PropTypes from 'prop-types';
 
 const ProductTable = props =>{
 
@@ -26,6 +27,12 @@ return (<table>
 
 </table>
 );}
+
+
+ProductTable.propTypes = {
+    tab: PropTypes.array
+    
+};
 
 export default ProductTable;
 
